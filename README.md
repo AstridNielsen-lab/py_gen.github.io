@@ -67,5 +67,5 @@ Este projeto é licenciado sob a MIT License - consulte o arquivo [LICENSE](LICE
 
 ![Tela](https://raw.githubusercontent.com/AstridNielsen-lab/py_gen.github.io/main/capa.png)
 
-![Código](https://raw.githubusercontent.com/AstridNielsen-lab/my_eth_app.github.io/main/Ethereum%20Wallet%20Info.png)
+![Código](https://raw.githubusercontent.com/AstridNielsen-lab/py_gen.github.io/main/prod.png)
 
