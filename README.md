@@ -13,8 +13,7 @@ Dashboard* Visualize informações sobre o estoque e vendas em um painel intuiti
 
 ## Estrutura do Projeto
 
-```
-plaintext
+```plaintext
 /adega
 │
 ├── app.py               # Arquivo principal do aplicativo Flask
