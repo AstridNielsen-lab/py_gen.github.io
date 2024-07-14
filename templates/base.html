@@ -1,0 +1,34 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Adega Radio Tatuape FM</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Adega Radio Tatuape FM</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Vendas</a></li>                
+                <li><a href="/prod">Produtos</a></li>
+                <li><a href="/forn">Fornecedores</a></li>                
+                <li><a href="/entradas">Entradas</a></li>
+                <li><a href="/saidas">Saídas</a></li>
+                <li><a href="/lojas">Lojas</a></li>
+                <li><a href="/cont_estoque">Controle de Estoque</a></li>
+                <li><a href="/dash_estoque">Dash Estoque</a></li>
+                <li><a href="/dash_resultados">Dash Resultados</a></li>
+                <li><a href="/instrucoes">Instruções</a></li>
+                <li><a href="/auxiliar">Auxiliar</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

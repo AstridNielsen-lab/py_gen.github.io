@@ -1,0 +1,73 @@
+<!-- templates/dash_vg.html -->
+{% extends "base.html" %}
+{% block content %}
+<h2>Dashboard de Visualização Geral</h2>
+<p>Aqui vai o dashboard de visualização geral.</p>
+
+<h3>Resumo do Estoque</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço Médio</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for produto in estoque %}
+        <tr>
+            <td>{{ produto[1] }}</td>
+            <td>{{ produto[2] }}</td>
+            <td>{{ produto[3] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h3>Vendas Recentes</h3>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+            <th>Data da Venda</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for venda in vendas %}
+        <tr>
+            <td>{{ venda[0] }}</td>
+            <td>{{ venda[1] }}</td>
+            <td>{{ venda[2] }}</td>
+            <td>{{ venda[3] }}</td>
+            <td>{{ venda[4] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h3>Saídas Recentes</h3>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Data da Saída</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for saida in saidas %}
+        <tr>
+            <td>{{ saida[0] }}</td>
+            <td>{{ saida[1] }}</td>
+            <td>{{ saida[2] }}</td>
+            <td>{{ saida[3] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

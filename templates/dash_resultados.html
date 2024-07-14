@@ -1,0 +1,41 @@
+<!-- templates/dash_resultados.html -->
+{% extends "base.html" %}
+{% block content %}
+<h2>Dash Resultados</h2>
+<p>Aqui vai o dashboard de resultados financeiros.</p>
+
+<h3>Resumo de Vendas</h3>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+            <th>Data da Venda</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for venda in vendas %}
+        <tr>
+            <td>{{ venda[0] }}</td>
+            <td>{{ venda[1] }}</td>
+            <td>{{ venda[2] }}</td>
+            <td>{{ venda[3] }}</td>
+            <td>{{ venda[4] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h3>Total de Vendas</h3>
+<p>O total de vendas é: R$ {{ total_vendas }}</p>
+
+<h3>Produtos Mais Vendidos</h3>
+<ul>
+    {% for produto in produtos_vendidos %}
+    <li>{{ produto[0] }}: {{ produto[1] }} vendas</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

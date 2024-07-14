@@ -1,0 +1,60 @@
+<!-- templates/auxiliar.html -->
+{% extends "base.html" %}
+{% block content %}
+<h2>Auxiliar</h2>
+<p>Aqui vão os dados auxiliares.</p>
+
+<h3>Dados de Fornecedores</h3>
+<p>Liste aqui os principais fornecedores do estoque e seus contatos:</p>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Contato</th>
+            <th>E-mail</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for fornecedor in fornecedores %}
+        <tr>
+            <td>{{ fornecedor[0] }}</td>
+            <td>{{ fornecedor[1] }}</td>
+            <td>{{ fornecedor[2] }}</td>
+            <td>{{ fornecedor[3] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h3>Dados de Lojas</h3>
+<p>Informações sobre as lojas onde os produtos são vendidos:</p>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Contato</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for loja in lojas %}
+        <tr>
+            <td>{{ loja[0] }}</td>
+            <td>{{ loja[1] }}</td>
+            <td>{{ loja[2] }}</td>
+            <td>{{ loja[3] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h3>Informações de Contato</h3>
+<p>Para mais informações ou suporte, entre em contato:</p>
+<ul>
+    <li>Email: juliocamposmachado@gmail.com</li>
+    <li>Telefone: (11) 97060-3441</li>
+</ul>
+
+{% endblock %}

@@ -1,0 +1,69 @@
+<!-- templates/entradas.html -->
+{% extends "base.html" %}
+{% block content %}
+<h2>Registros de Entradas</h2>
+<p>Aqui vão os registros de entradas.</p>
+
+<form action="/entrada" method="POST">
+    <h3>Registrar Entrada</h3>
+    <label for="produto">Produto:</label>
+    <input type="text" id="produto" name="produto" required>
+    
+    <label for="quantidade">Quantidade:</label>
+    <input type="number" id="quantidade" name="quantidade" required>
+    
+    <label for="preco">Preço:</label>
+    <input type="number" step="0.01" id="preco" name="preco" required>
+    
+    <button type="submit">Registrar Entrada</button>
+</form>
+
+<h3>Entradas Registradas</h3>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+            <th>Data da Entrada</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for entrada in entradas %}
+        <tr>
+            <td>{{ entrada[0] }}</td>
+            <td>{{ entrada[1] }}</td>
+            <td>{{ entrada[2] }}</td>
+            <td>{{ entrada[3] }}</td>
+            <td>{{ entrada[4] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h3>Vendas Relacionadas</h3>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+            <th>Data da Venda</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for venda in vendas %}
+        <tr>
+            <td>{{ venda[0] }}</td>
+            <td>{{ venda[1] }}</td>
+            <td>{{ venda[2] }}</td>
+            <td>{{ venda[3] }}</td>
+            <td>{{ venda[4] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

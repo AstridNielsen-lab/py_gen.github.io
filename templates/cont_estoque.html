@@ -1,0 +1,68 @@
+<!-- templates/cont_estoque.html -->
+{% extends "base.html" %}
+{% block content %}
+<h2>Controle de Estoque</h2>
+<p>Aqui vai o controle geral do estoque.</p>
+
+<h3>Produtos no Estoque</h3>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for produto in estoque %}
+        <tr>
+            <td>{{ produto[0] }}</td>
+            <td>{{ produto[1] }}</td>
+            <td>{{ produto[2] }}</td>
+            <td>{{ produto[3] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h3>Registrar Venda</h3>
+<form action="/venda" method="POST">
+    <label for="produto">Produto:</label>
+    <select id="produto" name="produto" required>
+        {% for produto in estoque %}
+        <option value="{{ produto[1] }}">{{ produto[1] }}</option>
+        {% endfor %}
+    </select>
+
+    <label for="quantidade">Quantidade:</label>
+    <input type="number" id="quantidade" name="quantidade" required>
+
+    <button type="submit">Registrar Venda</button>
+</form>
+
+<h3>Vendas Realizadas</h3>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+            <th>Data da Venda</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for venda in vendas %}
+        <tr>
+            <td>{{ venda[0] }}</td>
+            <td>{{ venda[1] }}</td>
+            <td>{{ venda[2] }}</td>
+            <td>{{ venda[3] }}</td>
+            <td>{{ venda[4] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

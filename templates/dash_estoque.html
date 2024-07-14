@@ -1,0 +1,47 @@
+<!-- templates/dash_estoque.html -->
+{% extends "base.html" %}
+{% block content %}
+<h2>Dash Estoque</h2>
+<p>Aqui vai o dashboard específico do estoque.</p>
+
+<h3>Resumo do Estoque</h3>
+<div class="dashboard">
+    <div class="card">
+        <h4>Total de Produtos em Estoque</h4>
+        <p>{{ total_produtos }}</p>
+    </div>
+    <div class="card">
+        <h4>Total de Entradas</h4>
+        <p>{{ total_entradas }}</p>
+    </div>
+    <div class="card">
+        <h4>Total de Saídas</h4>
+        <p>{{ total_saidas }}</p>
+    </div>
+    <div class="card">
+        <h4>Total de Vendas</h4>
+        <p>{{ total_vendas }}</p>
+    </div>
+</div>
+
+<h3>Produtos com Baixo Estoque</h3>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for produto in produtos_baixo_estoque %}
+        <tr>
+            <td>{{ produto[0] }}</td>
+            <td>{{ produto[1] }}</td>
+            <td>{{ produto[2] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
