@@ -13,7 +13,7 @@ O objetivo é facilitar o controle de estoque, vendas, entradas e saídas de pro
 
 ## Estrutura do Projeto
 
-```plaintext
+```
 /adega
 │
 ├── app.py               # Arquivo principal do aplicativo Flask
