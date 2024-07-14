@@ -10,6 +10,7 @@ Gerenciamento de Estoque: Adicione, visualize e atualize produtos em estoque.
 Registro de Vendas: Registre vendas de produtos e atualize o estoque automaticamente.
 Controle de Entradas e Saídas: Gerencie entradas e saídas de produtos, com relatórios detalhados.
 Dashboard* Visualize informações sobre o estoque e vendas em um painel intuitivo.
+```
 
 ## Estrutura do Projeto
 
