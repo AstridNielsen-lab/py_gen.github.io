@@ -64,13 +64,3 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir um issue ou envi
 
 Este projeto é licenciado sob a MIT License - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 ```
-
-### Personalizações
-
-- **Título**: Altere o título e a descrição conforme necessário.
-- **Funcionalidades**: Adicione ou remova funcionalidades de acordo com seu projeto.
-- **Estrutura do Projeto**: Inclua todos os arquivos e pastas relevantes.
-- **Pré-requisitos**: Verifique se todas as dependências estão listadas no `requirements.txt`.
-- **Licença**: Inclua informações sobre a licença se houver.
-
-Sinta-se à vontade para modificar qualquer parte!
