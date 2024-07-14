@@ -3,7 +3,8 @@ Claro! Aqui está um modelo básico para o seu `README.md`. Você pode personali
 ```markdown
 # Projeto Adega
 
-Este projeto é um sistema de gerenciamento de adega, desenvolvido em Python com Flask e SQLite. O objetivo é facilitar o controle de estoque, vendas, entradas e saídas de produtos em uma adega.
+Este projeto é um sistema de gerenciamento de adega, desenvolvido em Python com Flask e SQLite.
+O objetivo é facilitar o controle de estoque, vendas, entradas e saídas de produtos em uma adega.
 
 ## Funcionalidades
 
