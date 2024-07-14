@@ -1,5 +1,3 @@
-Claro! Aqui está um modelo básico para o seu `README.md`. Você pode personalizá-lo conforme necessário:
-
 ```markdown
 # Projeto Adega
 
