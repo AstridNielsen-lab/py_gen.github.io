@@ -64,3 +64,8 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir um issue ou envi
 ## Licença
 
 Este projeto é licenciado sob a MIT License - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+![Tela](https://raw.githubusercontent.com/AstridNielsen-lab/py_gen.github.io/main/capa.png)
+
+![Código](https://raw.githubusercontent.com/AstridNielsen-lab/my_eth_app.github.io/main/Ethereum%20Wallet%20Info.png)
+
