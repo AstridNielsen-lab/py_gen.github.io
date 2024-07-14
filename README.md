@@ -62,6 +62,6 @@ O aplicativo estará disponível em `http://127.0.0.1:5000/`.
 Contribuições são bem-vindas! Sinta-se à vontade para abrir um issue ou enviar um pull request.
 
 ## Licença
-
+```
 Este projeto é licenciado sob a MIT License - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 ```
