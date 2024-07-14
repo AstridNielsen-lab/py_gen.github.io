@@ -69,3 +69,4 @@ Este projeto é licenciado sob a MIT License - consulte o arquivo [LICENSE](LICE
 
 ![Código](https://raw.githubusercontent.com/AstridNielsen-lab/py_gen.github.io/main/prod.png)
 
+![Código](https://raw.githubusercontent.com/AstridNielsen-lab/py_gen.github.io/main/estoque.png)
